@@ -250,6 +250,9 @@
             if (window.innerWidth < 501) swiper.params.slidesPerView = 1
             swiper.update()
         }
+
+        if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
+
     </script>
 
 

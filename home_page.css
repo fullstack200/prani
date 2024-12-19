@@ -61,9 +61,6 @@ body {
 
 /* Testimonial Card */
 .testimonial-card {
-    width: 90%;
-    min-height: 400px;
-    max-height: 500px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: forestgreen;
@@ -416,6 +413,16 @@ body {
         background-color: rgb(255, 210, 0);
         font-weight: 800;
     }
+
+    .testimonial-card{
+        width:80%;
+        height:350px;
+        --smooth-corners: 5;
+        mask-image: paint(smooth-corners);
+        -webkit-mask-image: paint(smooth-corners);
+        
+    }
+
 
     #test-h1 {
         text-align: left !important;
