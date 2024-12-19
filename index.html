@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awsome Icons-->
+    <script src="https://kit.fontawesome.com/562a44d30d.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="home_page.css">
+
+</head>
+
+<body>
+    <section id="navbar">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="nav">
+            <div><i class="fa-solid fa-bars" onclick="openNav()"></i></div>
+            <div class="brand_name">
+                <p class="name">Prani</p>
+                <p class="tag-line">The Pet Sanctuary</p>
+            </div>
+            <div>
+                <button>
+                    Book Tickets
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="slider_container">
+        <section class="slider">
+            <div class="slide one">
+                <img src="goat.jpg" alt="">
+                <span class="caption">
+                    <h1>Every Life Deserves a Loving Home</h1>
+                    <button>Book Tickets</button>
+                </span>
+            </div>
+            <div class="slide two">
+                <img src="dog.jpg" alt="img1">
+                <span class="caption">
+                    <h1>Rescue. Rehabilitate. Rehome.</h1>
+                    <button>Book tickets</button>
+                </span>
+            </div>
+            <div class="slide three">
+                <img src="calf.jpg" alt="img2">
+                <span class="caption">
+                    <h1>Paws for Love, Stay for the Care</h1>
+                    <button>Book tickets</button>
+                </span>
+            </div>
+            <div class="slide four">
+                <img src="hamster.jpg" alt="img3">
+                <span class="caption">
+                    <h1>Together, We Can Save Lives</h1>
+                    <button>Book tickets</button>
+                </span>
+            </div>
+            <div class="slide four">
+                <img src="rabbit.jpg" alt="img4">
+                <span class="caption">
+                    <h1>A Safe Haven for Our Furry Friends</h1>
+                    <button>Book tickets</button>
+                </span>
+            </div>
+            <div>
+                <img src="turtle.jpg" alt="img5">
+                <span class="caption">
+                    <h1>Where Every Paw Finds Hope</h1>
+                    <button>Book tickets</button>
+                </span>
+            </div>
+            <svg width="0" height="0">
+                <defs>
+                    <clipPath id="smile-mask" clipPathUnits="objectBoundingBox">
+                        <path d="M0,0 H1 V0.8 C0.8,1 0.2,1 0,0.8 Z" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </section>
+    </section>
+
+    <section id="head-para">
+        <div class="intro">
+            <h1>A great day out that makes a difference</h1>
+            <p>At Prani, we believe that every animal deserves a second chance at life, filled with love,
+                care, and dignity. Our sanctuary is more than just a place of shelter—it's a home where our furry
+                friends receive the compassion and attention they need to heal and thrive. Whether abandoned, injured,
+                or in need of a fresh start, each animal in our care is treated with the utmost respect and kindness. We
+                invite you to join us on this journey of rescue, rehabilitation, and rehoming, where every life we touch
+                becomes a testament to the power of love. Together, we can make a difference, one paw at a time.</p>
+        </div>
+        <div class="ratings-div">
+            <p>
+                <span>Prani</span><br> The Pet Sanctuary
+            </p>
+            <div class="ratings">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>9,137 reviews</p>
+            </div>
+            <div class="sub-rating">
+                <i class="fa-brands fa-google"></i>
+                <p>&nbsp;&nbsp;Google</p>
+            </div>
+        </div>
+        <div class="navigator">
+            <a href="">
+                <div class="menus gr">Open daily from 9 AM to 5 PM</div>
+            </a>
+            <a href="">
+                <div class="menus wh">Book Tickets</div>
+            </a>
+            <a href="">
+                <div class="menus gr">Accessability</div>
+            </a>
+            <a href="">
+                <div class="menus wh">FAQ's</div>
+            </a>
+            <a href="">
+                <div class="menus gr">Getting Here</div>
+            </a>
+        </div>
+
+
+        <div id="craouselContainer" class="swiper-container">
+            <div class="swiper-wrapper" id="slideHolder">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
+                            compassionate and loving. Highly
+                            recommended!"</p>
+                        <h4>— John Doe</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
+                            compassionate and loving. Highly
+                            recommended!"</p>
+                        <h4>— John Doe</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
+                            compassionate and loving. Highly
+                            recommended!"</p>
+                        <h4>— John Doe</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
+                            compassionate and loving. Highly
+                            recommended!"</p>
+                        <h4>— John Doe</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
+                            compassionate and loving. Highly
+                            recommended!"</p>
+                        <h4>— John Doe</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+    <section id="footer">
+        <div class="sub-footer">
+            <h3>Useful Links</h3>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Book Tickets</a>
+            <a href="">FAQ's</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="sub-footer">
+            <h3>Site Information</h3>
+            <a href="">Terms</a>
+            <a href="">Policy</a>
+            <a href="">Careers</a>
+        </div>
+        <p>© 2024 Prani Sanctuary, Somanahalli Village, Off Kanakapura Rd, Bengaluru, Karnataka, India, Pin- 560082. All
+            rights reserved.</p>
+        <div id="arc" class="arc-container">
+            <img src="0ec19b_0b8d7417acda4586b5fbbeef1.png" alt="Centered Image">
+        </div>
+    </section>
+    <!-- Swiper JS -->
+    <script>
+        const swiper = new Swiper('#craouselContainer', {
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 2.3,
+            loop: true,
+            spaceBetween: 30,
+            effect: "coverflow",
+            coverflowEffect: {
+                rotate: 0,
+                depth: 800,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: { delay: 5000 }
+        });
+        window.onresize = queryResizer
+        queryResizer()
+        function queryResizer() {
+            if (window.innerWidth < 724) swiper.params.slidesPerView = 2
+            if (window.innerWidth > 501) swiper.params.slidesPerView = 2
+            if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3
+            if (window.innerWidth < 501) swiper.params.slidesPerView = 1
+            swiper.update()
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
