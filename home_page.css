@@ -182,16 +182,19 @@ body {
 
 .intro{
     position: relative;
+    overflow: hidden;
+    
 }
 
 .intro h1, .intro p{
     position: relative;
     z-index: 100;
+    
 }
 
 .intro .botom-left-paw{
     position: absolute;
-    top:250px;
+    top:350px;
     right:150px;
     width: 300px;
     /* Adjust size of the image */
@@ -205,7 +208,7 @@ body {
 
 .intro .top-right-paw {
     position: absolute;
-    top:-150px;
+    top:-50px;
     left:150px;
     width: 300px;
     /* Adjust size of the image */
@@ -491,7 +494,10 @@ body {
 
     #head-para {
         padding: 0px 10px 40px;
-        margin-top: 20px;
+    }
+
+    .intro{
+        padding:100px 0;
     }
 
     .intro>h1 {
@@ -507,7 +513,7 @@ body {
     }
 
     .ratings-div {
-        margin: 40px 0;
+        margin-bottom: 50px;
         width: 300px;
         padding: 10px;
     }
