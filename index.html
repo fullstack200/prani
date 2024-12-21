@@ -14,94 +14,117 @@
     <!--Font Awsome Icons-->
     <script src="https://kit.fontawesome.com/562a44d30d.js" crossorigin="anonymous"></script>
 
-    <!-- Swiper JS CSS -->
+    <!--Swiper JS CSS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <title>Document</title>
+    <!--CSS File Link-->
     <link rel="stylesheet" href="home_page.css">
 
+    <!--Title-->
+    <title>Prani Pet Sanctuary</title>
 </head>
 
 <body>
     <section id="navbar">
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
         <div class="nav">
-            <div><i class="fa-solid fa-bars" onclick="openNav()"></i></div>
+            <div>
+                <i id="menu-icon" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
             <div class="brand_name">
                 <p class="name">Prani</p>
                 <p class="tag-line">The Pet Sanctuary</p>
             </div>
-            <div>
+            <div class="ticket_button">
                 <button>
-                    Book Tickets
+                    TICKETS
                 </button>
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <div class="overlay-sub-content">
+                    <a href="#">About</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="overlay-sub-content">
+                    <a href="#">Services</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="overlay-sub-content">
+                    <a href="#">Our Terms</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="overlay-sub-content">
+                    <a href="#">Our Policies</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="overlay-sub-content">
+                    <a href="#">FAQ's</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="overlay-sub-content">
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="extra-content">
+                    <p>
+                        Extra content can be<br>added here.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-
     <section class="slider_container">
         <section class="slider">
-            <div class="slide one">
+            <div class="slide">
                 <img src="goat.jpg" alt="">
                 <span class="caption">
                     <h1>Every Life Deserves a Loving Home</h1>
                     <button>Book Tickets</button>
                 </span>
             </div>
-            <div class="slide two">
+            <div class="slide">
                 <img src="dog.jpg" alt="img1">
                 <span class="caption">
                     <h1>Rescue. Rehabilitate. Rehome.</h1>
-                    <button>Book tickets</button>
+                    <button>Book Tickets</button>
                 </span>
             </div>
-            <div class="slide three">
+            <div class="slide">
                 <img src="calf.jpg" alt="img2">
                 <span class="caption">
                     <h1>Paws for Love, Stay for the Care</h1>
-                    <button>Book tickets</button>
+                    <button>Book Tickets</button>
                 </span>
             </div>
-            <div class="slide four">
+            <div class="slide">
                 <img src="hamster.jpg" alt="img3">
                 <span class="caption">
                     <h1>Together, We Can Save Lives</h1>
-                    <button>Book tickets</button>
+                    <button>Book Tickets</button>
                 </span>
             </div>
-            <div class="slide four">
+            <div class="slide">
                 <img src="rabbit.jpg" alt="img4">
                 <span class="caption">
                     <h1>A Safe Haven for Our Furry Friends</h1>
-                    <button>Book tickets</button>
+                    <button>Book Tickets</button>
                 </span>
             </div>
-            <div>
-                <img src="turtle.jpg" alt="img5">
+            <!-- Duplicate of the first slide -->
+            <div class="slide">
+                <img src="goat.jpg" alt="img5">
                 <span class="caption">
-                    <h1>Where Every Paw Finds Hope</h1>
-                    <button>Book tickets</button>
+                    <h1>Every Life Deserves a Loving Home</h1>
+                    <button>Book Tickets</button>
                 </span>
             </div>
-            <svg width="0" height="0">
-                <defs>
-                    <clipPath id="smile-mask" clipPathUnits="objectBoundingBox">
-                        <path d="M0,0 H1 V0.8 C0.8,1 0.2,1 0,0.8 Z" />
-                    </clipPath>
-                </defs>
-            </svg>
         </section>
     </section>
+
 
     <section id="head-para">
         <div class="intro">
@@ -134,72 +157,28 @@
         </div>
         <div class="navigator">
             <a href="">
-                <div class="menus gr">Open daily from 9 AM to 5 PM</div>
+                <div class="menus gr">Open daily from 9 AM to 5 PM <i class="fa-solid fa-door-open fa-lg"
+                        style="color: #ffd700;"></i></div>
             </a>
             <a href="">
-                <div class="menus wh">Book Tickets</div>
+                <div class="menus wh">Book Tickets <i class="fa-solid fa-ticket fa-lg" style="color: #228b22;"></i>
+                </div>
             </a>
             <a href="">
-                <div class="menus gr">Accessability</div>
+                <div class="menus gr">Accessability <i class="fa-solid fa-person fa-lg" style="color: #ffd700;"></i>
+                </div>
             </a>
             <a href="">
-                <div class="menus wh">FAQ's</div>
+                <div class="menus wh">FAQ's <i class="fa-solid fa-circle-question fa-lg" style="color: #228b22;"></i>
+                </div>
             </a>
             <a href="">
-                <div class="menus gr">Getting Here</div>
+                <div class="menus gr">Getting Here <i class="fa-solid fa-map-location fa-lg"
+                        style="color: #ffd700;"></i></div>
             </a>
         </div>
-
-
-        <div id="craouselContainer" class="swiper-container">
-            <div class="swiper-wrapper" id="slideHolder">
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
-                            compassionate and loving. Highly
-                            recommended!"</p>
-                        <h4>— John Doe</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
-                            compassionate and loving. Highly
-                            recommended!"</p>
-                        <h4>— John Doe</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
-                            compassionate and loving. Highly
-                            recommended!"</p>
-                        <h4>— John Doe</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
-                            compassionate and loving. Highly
-                            recommended!"</p>
-                        <h4>— John Doe</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <p><img src="quote.png" alt=""> Prani sanctuary saved my pet's life! The team is so
-                            compassionate and loving. Highly
-                            recommended!"</p>
-                        <h4>— John Doe</h4>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-
-        </div>
-
     </section>
+
     <section id="footer">
         <div class="sub-footer">
             <h3>Useful Links</h3>
@@ -221,45 +200,69 @@
             <img src="0ec19b_0b8d7417acda4586b5fbbeef1.png" alt="Centered Image">
         </div>
     </section>
-    <!-- Swiper JS -->
-    <script>
-        const swiper = new Swiper('#craouselContainer', {
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 2.3,
-            loop: true,
-            spaceBetween: 30,
-            effect: "coverflow",
-            coverflowEffect: {
-                rotate: 0,
-                depth: 800,
-                slideShadows: true,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-            autoplay: { delay: 5000 }
-        });
-        window.onresize = queryResizer
-        queryResizer()
-        function queryResizer() {
-            if (window.innerWidth < 724) swiper.params.slidesPerView = 2
-            if (window.innerWidth > 501) swiper.params.slidesPerView = 2
-            if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3
-            if (window.innerWidth < 501) swiper.params.slidesPerView = 1
-            swiper.update()
-        }
 
+    <script>
         if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
 
+        function toggleNav() {
+            const overlay = document.getElementById("myNav");
+            const menuIcon = document.getElementById("menu-icon");
+
+            // Check if overlay is open
+            if (overlay.style.width === "100%") {
+                // Close overlay and switch icon to 'bars'
+                overlay.style.width = "0%";
+                menuIcon.classList.remove("fa-x");
+                menuIcon.classList.add("fa-bars");
+            } else {
+                // Open overlay and switch icon to 'x'
+                overlay.style.width = "100%";
+                menuIcon.classList.remove("fa-bars");
+                menuIcon.classList.add("fa-x");
+            }
+        }
+
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top <= window.innerHeight &&
+                rect.bottom >= 0
+            );
+        }
+
+        // Scroll event listener
+        document.addEventListener('scroll', () => {
+            const menus = document.querySelectorAll('.menus');
+            menus.forEach(menu => {
+                if (isInViewport(menu)) {
+                    menu.classList.add('visible'); // Add class when in view
+                } else {
+                    menu.classList.remove('visible'); // Remove class when out of view
+                }
+            });
+        });
+
+        const sliderContainer = document.querySelector('.slider_container');
+        const slider = document.querySelector('.slider');
+
+        // Stop animation on manual scroll
+        sliderContainer.addEventListener('scroll', () => {
+            slider.style.animationPlayState = 'paused'; // Pause animation
+        });
+
+        // Resume animation after scrolling
+        let scrollTimeout;
+        sliderContainer.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                slider.style.animationPlayState = 'running'; // Resume animation
+            }, 150); // Small delay before resuming
+        });
+
+
+
     </script>
-
-
-
-
-
-
 </body>
 
 </html>
