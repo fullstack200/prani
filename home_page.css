@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow-x:hidden;
+    overflow-x: hidden;
     /* Enable manual horizontal scrolling */
     overflow-y: hidden;
     /* Prevent vertical scrolling */
@@ -180,8 +180,48 @@ body {
     text-align: center;
 }
 
+.intro{
+    position: relative;
+}
+
+.intro h1, .intro p{
+    position: relative;
+    z-index: 100;
+}
+
+.intro .botom-left-paw{
+    position: absolute;
+    top:250px;
+    right:150px;
+    width: 300px;
+    /* Adjust size of the image */
+    height: 300px;
+    /* Adjust size of the image */
+    background-image: url('/greenpaw.png');
+    background-size: contain;
+    /* Scale the image to fit the size */
+    background-repeat: no-repeat;
+}
+
+.intro .top-right-paw {
+    position: absolute;
+    top:-150px;
+    left:150px;
+    width: 300px;
+    /* Adjust size of the image */
+    height: 300px;
+    /* Adjust size of the image */
+    background-image: url('/yellowpaw.png');
+    background-size: contain;
+    /* Scale the image to fit the size */
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
 .ratings-div {
     border: 2px solid forestgreen;
+    position: relative;
+    z-index: 100;
 }
 
 .ratings-div>p {
@@ -255,6 +295,36 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.navigator .top-left-leaf {
+    position: absolute;
+    top:20px;
+    right:150px;
+    width: 300px;
+    /* Adjust size of the image */
+    height: 300px;
+    /* Adjust size of the image */
+    background-image: url('/greenleaf.png');
+    background-size: contain;
+    /* Scale the image to fit the size */
+    background-repeat: no-repeat;
+}
+
+.navigator .bottom-right-leaf {
+    position: absolute;
+    bottom:-70px;
+    left:150px;
+    width: 300px;
+    /* Adjust size of the image */
+    height: 300px;
+    /* Adjust size of the image */
+    background-image: url('/yellowleaf.png');
+    background-size: contain;
+    /* Scale the image to fit the size */
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .menus {
@@ -280,6 +350,7 @@ body {
 .navigator a {
     margin: 0;
     text-decoration: none;
+    z-index: 100;
 }
 
 .gr {
