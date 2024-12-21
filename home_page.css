@@ -197,7 +197,7 @@ body {
     /* Adjust size of the image */
     height: 300px;
     /* Adjust size of the image */
-    background-image: url('/greenpaw.png');
+    background-image: url('greenpaw.png');
     background-size: contain;
     /* Scale the image to fit the size */
     background-repeat: no-repeat;
@@ -211,7 +211,7 @@ body {
     /* Adjust size of the image */
     height: 300px;
     /* Adjust size of the image */
-    background-image: url('/yellowpaw.png');
+    background-image: url('yellowpaw.png');
     background-size: contain;
     /* Scale the image to fit the size */
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ body {
     /* Adjust size of the image */
     height: 300px;
     /* Adjust size of the image */
-    background-image: url('/greenleaf.png');
+    background-image: url('greenleaf.png');
     background-size: contain;
     /* Scale the image to fit the size */
     background-repeat: no-repeat;
@@ -320,7 +320,7 @@ body {
     /* Adjust size of the image */
     height: 300px;
     /* Adjust size of the image */
-    background-image: url('/yellowleaf.png');
+    background-image: url('yellowleaf.png');
     background-size: contain;
     /* Scale the image to fit the size */
     background-repeat: no-repeat;
