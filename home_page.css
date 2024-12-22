@@ -192,14 +192,14 @@ body {
 
 .intro .botom-left-paw {
     position: absolute;
-    background-image: url('greenpaw.png');
+    background-image: url('yellowpaw.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .intro .top-right-paw {
     position: absolute;
-    background-image: url('yellowpaw.png');
+    background-image: url('greenpaw.png');
     background-size: contain;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -347,7 +347,7 @@ body {
 
 #explore-sec .top-right-leaf {
     position: absolute;
-    background-image: url('yellowleaf.png');
+    background-image: url('greenleaf.png');
     background-size: contain;
     background-repeat: no-repeat;
     overflow-x: hidden;
