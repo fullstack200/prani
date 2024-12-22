@@ -282,22 +282,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-}
-
-.navigator .top-left-leaf {
-    position: absolute;
-    background-image: url('greenleaf.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.navigator .bottom-right-leaf {
-    position: absolute;
-    background-image: url('yellowleaf.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 
 .menus {
@@ -340,8 +324,39 @@ body {
 
 #explore-sec {
     width: 100%;
+    padding: 40px 0;
+    position: relative;
     overflow: hidden;
 }
+
+#exp-h1 {
+    z-index: 100;
+    position: relative;
+}
+
+#explore-sec .bottom-left-leaf {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 350px;
+    left: -70px;
+    background-image: url('greenleaf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#explore-sec .top-right-leaf {
+    position: absolute;
+    background-image: url('yellowleaf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 300px;
+    height: 300px;
+    top: -40px;
+    left: 150px;
+}
+
 
 /* Adjust swiper-wrapper to display slides properly */
 .swiper-wrapper {
@@ -369,11 +384,19 @@ body {
     border-radius: 15px;
 }
 
+.explore-card img {
+    --smooth-corners: 10;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+}
+
 #footer {
     background-color: forestgreen;
     color: white;
     display: flex;
-    border-radius: 0 0 50px 50px;
+    border-top-left-radius: 50% 30px;
+    /* Smooth curve at bottom left */
+    border-top-right-radius: 50% 30px;
 }
 
 .sub-footer {
@@ -514,7 +537,7 @@ body {
     }
 
     .intro .botom-left-paw {
-        top: 300px;
+        top: 280px;
         right: 150px;
         width: 300px;
         height: 300px;
@@ -554,20 +577,6 @@ body {
         font-weight: 600;
     }
 
-    .navigator .top-left-leaf {
-        top: 20px;
-        right: 150px;
-        width: 300px;
-        height: 300px;
-    }
-
-    .navigator .bottom-right-leaf {
-        bottom: -70px;
-        left: 150px;
-        width: 300px;
-        height: 300px;
-    }
-
     .menus {
         padding: 40px;
         width: 300px;
@@ -575,15 +584,11 @@ body {
     }
 
     .explore-card img {
-        --smooth-corners: 10;
-        mask-image: paint(smooth-corners);
-        -webkit-mask-image: paint(smooth-corners);
         height: 170px;
         width: 100%;
-        border-radius: 15px;
     }
 
-    .explore-card p{
+    .explore-card p {
         padding: 0 10px;
     }
 
@@ -609,6 +614,20 @@ body {
 
     .sub-explore h2 {
         color: forestgreen;
+    }
+
+    #explore-sec .bottom-left-leaf {
+        width: 300px;
+        height: 300px;
+        top: 350px;
+        left: -70px;
+    }
+    
+    #explore-sec .top-right-leaf {
+        width: 300px;
+        height: 300px;
+        top: -40px;
+        left: 150px;
     }
 
     #footer {
