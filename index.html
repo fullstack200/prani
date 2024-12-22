@@ -179,6 +179,37 @@
                         style="color: #ffd700;"></i></div>
             </a>
         </div>
+
+        <div id="explore-sec" class="swiper-container">
+            <h1 id="exp-h1">Explore the Sanctuary</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="explore-card">
+                        <img src="explore.jpg" alt="">
+                        <div class="sub-explore">
+                            <h2>Our Services</h2>
+                            <i class="fa-solid fa-arrow-right fa-beat"></i>
+                        </div>
+                        <p>At Prani, we offer guided tours, interactive animal encounters, and educational sessions for
+                            a unique and enriching experience with our animals.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="explore-card">
+                        <img src="rabbit.jpg" alt="">
+                        <div class="sub-explore">
+                            <h2>Our Animals</h2>
+                            <i class="fa-solid fa-arrow-right fa-beat"></i>
+                        </div>
+                        <p>Explore the diverse range of animals we care for at Prani Sanctuary, from playful cats and
+                            dogs to rescued birds, rabbits, and more, all thriving in a safe and loving environment.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination outside the wrapper but inside container -->
+            <div class="swiper-pagination"></div>
+        </div>
+
     </section>
 
     <section id="footer">
@@ -260,6 +291,19 @@
             scrollTimeout = setTimeout(() => {
                 slider.style.animationPlayState = 'running'; // Resume animation
             }, 150); // Small delay before resuming
+        });
+
+
+        // Explore cards swiper code
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 10, // Adds spacing between slides
+            centeredSlides: false, // Keeps slides aligned to the left
+            loop: false, // Disables looping
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
 
 

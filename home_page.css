@@ -167,7 +167,6 @@ body {
     }
 }
 
-
 #head-para {
     display: flex;
     flex-direction: column;
@@ -180,43 +179,28 @@ body {
     text-align: center;
 }
 
-.intro{
+.intro {
     position: relative;
     overflow: hidden;
-    
 }
 
-.intro h1, .intro p{
+.intro h1,
+.intro p {
     position: relative;
     z-index: 100;
-    
 }
 
-.intro .botom-left-paw{
+.intro .botom-left-paw {
     position: absolute;
-    top:350px;
-    right:150px;
-    width: 300px;
-    /* Adjust size of the image */
-    height: 300px;
-    /* Adjust size of the image */
     background-image: url('greenpaw.png');
     background-size: contain;
-    /* Scale the image to fit the size */
     background-repeat: no-repeat;
 }
 
 .intro .top-right-paw {
     position: absolute;
-    top:-50px;
-    left:150px;
-    width: 300px;
-    /* Adjust size of the image */
-    height: 300px;
-    /* Adjust size of the image */
     background-image: url('yellowpaw.png');
     background-size: contain;
-    /* Scale the image to fit the size */
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -303,29 +287,15 @@ body {
 
 .navigator .top-left-leaf {
     position: absolute;
-    top:20px;
-    right:150px;
-    width: 300px;
-    /* Adjust size of the image */
-    height: 300px;
-    /* Adjust size of the image */
     background-image: url('greenleaf.png');
     background-size: contain;
-    /* Scale the image to fit the size */
     background-repeat: no-repeat;
 }
 
 .navigator .bottom-right-leaf {
     position: absolute;
-    bottom:-70px;
-    left:150px;
-    width: 300px;
-    /* Adjust size of the image */
-    height: 300px;
-    /* Adjust size of the image */
     background-image: url('yellowleaf.png');
     background-size: contain;
-    /* Scale the image to fit the size */
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -368,6 +338,37 @@ body {
     font-weight: 800;
 }
 
+#explore-sec {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Adjust swiper-wrapper to display slides properly */
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust the slide width to allow partial visibility */
+.swiper-slide {
+    flex: 0 0 calc(80% - 10px);
+    /* Show one full slide and part of the next one */
+    margin-right: 10px;
+    /* Add spacing between slides */
+}
+
+/* Explore card styles */
+.explore-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 #footer {
     background-color: forestgreen;
     color: white;
@@ -398,9 +399,9 @@ body {
     }
 
     .nav {
-        width: 95%;
+        width: 98%;
         border-radius: 10px;
-        margin: 5px 10px 10px 10px;
+        margin: 0px 5px 5px;
         padding: 10px;
     }
 
@@ -431,7 +432,7 @@ body {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 3;
+        z-index: 200;
         top: 0;
         left: 0;
         background-color: white;
@@ -496,8 +497,8 @@ body {
         padding: 0px 10px 40px;
     }
 
-    .intro{
-        padding:100px 0;
+    .intro {
+        padding: 50px 0 100px;
     }
 
     .intro>h1 {
@@ -510,6 +511,20 @@ body {
     .intro p {
         font-weight: 600;
         line-height: 25px;
+    }
+
+    .intro .botom-left-paw {
+        top: 300px;
+        right: 150px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .intro .top-right-paw {
+        top: -100px;
+        left: 150px;
+        width: 300px;
+        height: 300px;
     }
 
     .ratings-div {
@@ -539,10 +554,61 @@ body {
         font-weight: 600;
     }
 
+    .navigator .top-left-leaf {
+        top: 20px;
+        right: 150px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .navigator .bottom-right-leaf {
+        bottom: -70px;
+        left: 150px;
+        width: 300px;
+        height: 300px;
+    }
+
     .menus {
         padding: 40px;
         width: 300px;
         margin: 10px 0;
+    }
+
+    .explore-card img {
+        --smooth-corners: 10;
+        mask-image: paint(smooth-corners);
+        -webkit-mask-image: paint(smooth-corners);
+        height: 170px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .explore-card p{
+        padding: 0 10px;
+    }
+
+    .sub-explore {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 15px 0;
+        padding: 0 10px;
+    }
+
+    .sub-explore i {
+        color: rgb(255, 210, 0);
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
+    #exp-h1 {
+        text-align: left !important;
+        margin: 60px 0 20px 10px;
+        font-size: 1.8rem;
+    }
+
+    .sub-explore h2 {
+        color: forestgreen;
     }
 
     #footer {
