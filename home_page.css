@@ -190,7 +190,8 @@ body {
     z-index: 100;
 }
 
-.intro p, .explore-card p{
+.intro p,
+.explore-card p {
     font-weight: bold;
 }
 
@@ -340,10 +341,6 @@ body {
 
 #explore-sec .bottom-left-leaf {
     position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 350px;
-    left: -70px;
     background-image: url('yellowleaf.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -355,12 +352,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    width: 300px;
-    height: 300px;
-    top: -40px;
-    left: 150px;
 }
-
 
 /* Adjust swiper-wrapper to display slides properly */
 .swiper-wrapper {
@@ -369,7 +361,7 @@ body {
 }
 
 /* Adjust the slide width to allow partial visibility */
-.swiper-slide {
+.swiper-slide-exp {
     flex: 0 0 calc(80% - 10px);
     /* Show one full slide and part of the next one */
     margin-right: 10px;
@@ -394,6 +386,59 @@ body {
     -webkit-mask-image: paint(smooth-corners);
 }
 
+.testimonial-card {
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: forestgreen;
+    color: white;
+    font-weight: 800;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    --smooth-corners: 10;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+}
+
+#test-h1 {
+    text-align: left !important;
+    margin: 50px 0 50px 0px;
+    font-size: 1.8rem;
+}
+
+.swiper-container {
+    border-radius: 5px;
+    width: 90vw;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    font-family: Nunito;
+    background-color: white;
+}
+
+.swiper-pagination-bullet{
+    background-color: forestgreen;
+}
+
 #footer {
     background-color: forestgreen;
     color: white;
@@ -412,6 +457,7 @@ body {
     color: white;
     font-weight: 800;
 }
+
 
 @media only screen and (max-width: 480px) {
 
@@ -525,7 +571,7 @@ body {
     }
 
     .intro {
-        padding: 50px 0 100px;
+        padding: 50px 0;
     }
 
     .intro>h1 {
@@ -624,14 +670,14 @@ body {
         width: 300px;
         height: 300px;
         top: 350px;
-        left: -70px;
+        left: -120px;
     }
-    
+
     #explore-sec .top-right-leaf {
         width: 300px;
         height: 300px;
         top: -40px;
-        left: 150px;
+        left: 160px;
     }
 
     #footer {
