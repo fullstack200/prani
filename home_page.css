@@ -190,6 +190,10 @@ body {
     z-index: 100;
 }
 
+.intro p, .explore-card p{
+    font-weight: bold;
+}
+
 .intro .botom-left-paw {
     position: absolute;
     background-image: url('yellowpaw.png');
@@ -340,7 +344,7 @@ body {
     height: 300px;
     top: 350px;
     left: -70px;
-    background-image: url('greenleaf.png');
+    background-image: url('yellowleaf.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -532,7 +536,7 @@ body {
     }
 
     .intro p {
-        font-weight: 600;
+        font-weight: bold;
         line-height: 25px;
     }
 
@@ -544,7 +548,7 @@ body {
     }
 
     .intro .top-right-paw {
-        top: -100px;
+        top: -90px;
         left: 150px;
         width: 300px;
         height: 300px;
