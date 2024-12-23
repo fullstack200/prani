@@ -361,7 +361,7 @@ body {
 }
 
 /* Adjust the slide width to allow partial visibility */
-.swiper-slide-exp {
+#explore-sec .swiper-slide {
     flex: 0 0 calc(80% - 10px);
     /* Show one full slide and part of the next one */
     margin-right: 10px;
@@ -421,7 +421,7 @@ body {
     padding-bottom: 50px;
 }
 
-.swiper-slide {
+#craouselContainer .swiper-slide {
     width: auto;
     height: fit-content;
     display: flex;
@@ -474,7 +474,7 @@ body {
     .nav {
         width: 98%;
         border-radius: 10px;
-        margin: 0px 5px 5px;
+        margin-left: 3px;
         padding: 10px;
     }
 
