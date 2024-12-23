@@ -119,6 +119,7 @@ body {
 .caption button {
     font-size: 1.2rem;
     margin-top: 20px;
+    padding:10px;
 }
 
 @keyframes sliding {
